@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <FaultRules/>
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <Flows>
+        <Flow name="retrieveBankAccount">
+            <Description>Retrieve bank account details</Description>
+            <Request/>
+            <Response>
+                <Step>
+                    <Name>JavaScriptSetResponse</Name>
+                </Step>
+                <Step>
+                    <Name>AssignMessageSetResponseMessage</Name>
+                </Step>
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath "/bank/account") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="retrieveCreditCardAccount">
+            <Description>Retrieve credit card account details</Description>
+            <Request/>
+            <Response>
+                <Step>
+                    <Name>JavaScriptSetResponse</Name>
+                </Step>
+                <Step>
+                    <Name>AssignMessageSetResponseMessage</Name>
+                </Step>
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath "/creditcard/account") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="retrieveInsuranceAccount">
+            <Description>Retrieve insurance account details</Description>
+            <Request/>
+            <Response>
+                <Step>
+                    <Name>JavaScriptSetResponse</Name>
+                </Step>
+                <Step>
+                    <Name>AssignMessageSetResponseMessage</Name>
+                </Step>
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath "/insurance/account") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="retrieveFinancialDetails">
+            <Description>Retrieve financial details</Description>
+            <Request/>
+            <Response>
+                <Step>
+                    <Name>JavaScriptSetResponse</Name>
+                </Step>
+                <Step>
+                    <Name>AssignMessageSetResponseMessage</Name>
+                </Step>
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath "/financials") and (request.verb = "GET")</Condition>
+        </Flow>
+    </Flows>
+    <HTTPProxyConnection>
+        <BasePath>/mock/v1</BasePath>
+        <Properties/>
+        <VirtualHost>default</VirtualHost>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="noroute"/>
+</ProxyEndpoint>

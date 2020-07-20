@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AssignMessageSetResponseMessage" version="SHA-512:bdeadad90511ff06b0b0dff28715f35f7a1c5c98d386deb47df0cb2c32f8e13f5d83428fd3025836e000815fd4492709bdb15ddc99569818b172ee7d8c1b7276"/>
+        <VersionInfo resourceName="JavaScriptSetResponse" version="SHA-512:9c061d21e8471ad1bd856dd11aad53f550f10e63fa11200f4d05e557ea1bd674896b3cb127e21f6eab4cfb5142afaa98218de2c7fbb60253dd39380b9da3d73a"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:120d3296ac4f6a2005939953abd43b3db0c865e729ac3c37aa339cb9e87eb804870c81c5e8f17528e4192d444bbf3becd39843f39fbca3c1e72f53d7be7c776a"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://JavaScript-SetResponse.js" version="SHA-512:521f2273f142e49ba5dd80a8940e88815c62159b5303359222581a3b85f9166a925b0348bc3b4cd7d5ab71ad746cdab368ce9b39f8a5436f893457899df6101f"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints/>
+</Manifest>

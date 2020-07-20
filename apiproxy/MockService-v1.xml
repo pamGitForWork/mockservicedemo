@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="MockService-v1">
+    <Basepaths>/demo/v1/mock</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1594697957548</CreatedAt>
+    <CreatedBy>p.d.de.los.santos@accenture.com</CreatedBy>
+    <Description>Proxy that contains mock services</Description>
+    <DisplayName>MockService-v1</DisplayName>
+    <LastModifiedAt>1594697957548</LastModifiedAt>
+    <LastModifiedBy>p.d.de.los.santos@accenture.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:db6569c0a19349f4b23ca36c591ff8f981a2adef200e39e28859640b1c92cc37583488e2c9bf411d0fa6fbb4d3c0bf3ae990f1d9c3ebe79740867dffbd4d12d0</ManifestVersion>
+    <Policies>
+        <Policy>AssignMessageSetResponseMessage</Policy>
+        <Policy>JavaScriptSetResponse</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://JavaScript-SetResponse.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>
